@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to RAPID WEB APP’s Setup! &mdash; RAPID WEB APP 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> RAPID WEB APP
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to RAPID WEB APP’s Setup!</a></li>
+<li><a class="reference internal" href="#prequisites">Prequisites</a></li>
+<li><a class="reference internal" href="#setup-process-in-local-without-docker">Setup Process in Local Without Docker</a></li>
+<li><a class="reference internal" href="#test-environment-setup-with-docker">Test Environment Setup with Docker</a></li>
+<li><a class="reference internal" href="#test-environment-deployment">Test Environment Deployment</a></li>
+<li><a class="reference internal" href="#production-development-and-deployment">Production Development and Deployment</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">RAPID WEB APP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Welcome to RAPID WEB APP’s Setup!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-rapid-web-app-s-setup">
+<h1>Welcome to RAPID WEB APP’s Setup!<a class="headerlink" href="#welcome-to-rapid-web-app-s-setup" title="Permalink to this heading"></a></h1>
+<p>Welcome to the complete beginner’s guide to RAPID WEB APP setup.</p>
+</section>
+<section id="prequisites">
+<h1>Prequisites<a class="headerlink" href="#prequisites" title="Permalink to this heading"></a></h1>
+<p>Before installation you must have the following softwares installed in your machine</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>For Local Development - Without Docker</dt><dd><ul>
+<li><p>Python 3.8 and above</p></li>
+<li><p>PIP3</p></li>
+<li><p>venv or pyenv (Virtual Environment)</p></li>
+<li><p>git</p></li>
+<li><p>PostgreSQL &gt; 12</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>For Test/Production Deployment - With Docker</dt><dd><ul>
+<li><p>Docker CE &gt;= 20.10</p></li>
+<li><p>Docker Compose &gt;= 1.29</p></li>
+<li><p>git</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="setup-process-in-local-without-docker">
+<h1>Setup Process in Local Without Docker<a class="headerlink" href="#setup-process-in-local-without-docker" title="Permalink to this heading"></a></h1>
+<p>Follow the below steps to setup rapid app in your local:</p>
+<p><strong>Step 1</strong></p>
+<ul class="simple">
+<li><p>Use the following syntax in your terminal</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/devkitinn/dev-rapid <span class="o">(</span>make sure you have all the access to this repository<span class="o">)</span>
+git checkout feature/docker-setup
+</pre></div>
+</div>
+<p><strong>Step 2</strong></p>
+<ul class="simple">
+<li><p>Create python virtualenvironment and activate it. For example, in linux operating system follow the below syntax</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3 -m venv /path/to/venv
+<span class="nb">source</span> /path/to/venv/bin/activate
+</pre></div>
+</div>
+<p><strong>Step 3</strong></p>
+<ul class="simple">
+<li><p>Go to project root folder</p></li>
+<li><p>Install all the app packages from this folder (docker/packages/dev.txt). You can use the below syntax</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install -r docker/packages/dev.txt
+</pre></div>
+</div>
+<p><strong>Step 4</strong></p>
+<ul class="simple">
+<li><p>Setup PostgreSQL, you can follow the below syntax in linux</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo -u postgres psql
+CREATE DATABASE webrapidtest<span class="p">;</span>
+CREATE USER ki WITH PASSWORD <span class="s1">&#39;rapid@23456&#39;</span><span class="p">;</span>
+ALTER ROLE ki SET client_encoding TO <span class="s1">&#39;utf8&#39;</span><span class="p">;</span>
+ALTER ROLE ki SET default_transaction_isolation TO <span class="s1">&#39;read committed&#39;</span><span class="p">;</span>
+ALTER ROLE ki SET timezone TO <span class="s1">&#39;UTC&#39;</span><span class="p">;</span>
+GRANT ALL PRIVILEGES ON DATABASE webrapidtest TO ki<span class="p">;</span>
+</pre></div>
+</div>
+<p><strong>Step 5</strong></p>
+<ul class="simple">
+<li><p>Create environment variable tag “.env” with below data</p></li>
+</ul>
+<div class="admonition-remember admonition">
+<p class="admonition-title">Remember!</p>
+<p>While copy pasting the below entire code in .env file make sure there is no indent at the begining, otherwise indendation error will be thrown while migrating</p>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">SECRET_KEY</span><span class="o">=</span>OxOqffUpTiMcKKCbhDHzXTQcYvfQxIjdUulIQjAF
+<span class="nv">DEBUG</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">DJANGO_ALLOWED_HOSTS</span><span class="o">=</span><span class="s2">&quot;localhost 127.0.0.1 [::1]&quot;</span>
+
+<span class="nv">SQL_ENGINE</span><span class="o">=</span>django.db.backends.postgresql
+<span class="nv">SQL_DATABASE</span><span class="o">=</span>webrapidtest
+<span class="nv">SQL_USER</span><span class="o">=</span>ki
+<span class="nv">SQL_PASSWORD</span><span class="o">=</span>rapid@23456
+<span class="nv">SQL_HOST</span><span class="o">=</span>localhost
+<span class="nv">SQL_PORT</span><span class="o">=</span><span class="m">5432</span>
+
+<span class="nv">DJANGO_SETTINGS_MODULE</span><span class="o">=</span>rapid.settings
+<span class="nv">DJANGO_EMAIL_BACKEND</span><span class="o">=</span>django.core.mail.backends.smtp.EmailBackend
+<span class="nv">DJANGO_EMAIL_HOST</span><span class="o">=</span>smtp.gmail.com
+<span class="nv">DJANGO_EMAIL_PORT</span><span class="o">=</span><span class="m">587</span>
+<span class="nv">DJANGO_EMAIL_HOST_USER</span><span class="o">=</span>kitcheninnovations.rapid@gmail.com
+<span class="nv">DJANGO_EMAIL_HOST_PASSWORD</span><span class="o">=</span>fvoenkmakmjzzlag
+<span class="nv">DJANGO_DEFAULT_FROM_EMAIL</span><span class="o">=</span>rapid-email@kitcheninnovations.com.au
+<span class="nv">DJANGO_EMAIL_USE_TLS</span><span class="o">=</span>True
+
+<span class="nv">DJANGO_ACCOUNT_ALLOW_REGISTRATION</span><span class="o">=</span>False
+
+<span class="nv">CONSUMER_KEY</span><span class="o">=</span>a8fdd0ab8e5865c804fd3ca6bf1318c39db679ecc6902855c5850d163b62ba92
+<span class="nv">CONSUMER_SECRET</span><span class="o">=</span>7959943d2b26f64ecccd4722f21b5c2276df6ff80fea9a093d5839f2c94775d9
+<span class="nv">TOKEN_KEY</span><span class="o">=</span>bd612b0147cc8c8bee13af86d0f37e8e7df953c6b537068d266b91d8de59a5f0
+<span class="nv">TOKEN_SECRET</span><span class="o">=</span>e556cdce1bc7d78eff3d94e531a87f006946fb4d9dcd8add530421855e58e90d
+
+<span class="c1"># Not in use</span>
+
+<span class="nv">NSDB_NAME</span><span class="o">=</span>netsuite
+<span class="nv">NSDB_USER</span><span class="o">=</span>ki
+<span class="nv">NSDB_PASSWORD</span><span class="o">=</span>Link3061
+<span class="nv">NSDB_HOST</span><span class="o">=</span><span class="m">172</span>.16.1.46
+<span class="nv">NSDB_PORT</span><span class="o">=</span><span class="m">5432</span>
+<span class="nv">PORT</span><span class="o">=</span><span class="m">5443</span>
+</pre></div>
+</div>
+<p><strong>Step 6</strong></p>
+<ul class="simple">
+<li><p>Enter the below syntax before migrations</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> -o allexport<span class="p">;</span> <span class="nb">source</span> .env<span class="p">;</span> <span class="nb">set</span> +o allexport
+</pre></div>
+</div>
+<p><strong>Step 7</strong></p>
+<ul class="simple">
+<li><p>Run migrations to initiate the process</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3 manage.py migrate
+</pre></div>
+</div>
+<p><strong>Step 8</strong></p>
+<ul class="simple">
+<li><p>Restore with backup data if there is any e.g, sample cmds</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>cat backup.json <span class="p">|</span> python3 manage.py loaddata --format<span class="o">=</span>json -
+python3 manage.py loaddata backup.json or backup.json.gz
+</pre></div>
+</div>
+<p><strong>Step 9</strong></p>
+<ul class="simple">
+<li><p>Create superuser and run server on any port</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3 manage.py createsuperuser
+python3 manage.py runserver <span class="m">8001</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="test-environment-setup-with-docker">
+<h1>Test Environment Setup with Docker<a class="headerlink" href="#test-environment-setup-with-docker" title="Permalink to this heading"></a></h1>
+<p>Follow the below steps to setup rapid app in your local,</p>
+<p><strong>Step 1</strong></p>
+<ul class="simple">
+<li><p>Use the following syntax in your terminal</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/devkitinn/dev-rapid <span class="o">(</span>make sure you have all the access to this repository<span class="o">)</span>
+git checkout feature/docker-setup
+</pre></div>
+</div>
+<p><strong>Step 2</strong></p>
+<ul class="simple">
+<li><p>Go to project root folder</p></li>
+<li><p>Add a host entry to /etc/hosts for your domain e.g 0.0.0.0 mydomain.com</p></li>
+<li><p>HTTPS support, Create self-signed ssl certificate or if you own any ssl certificates place them in your host dir - /ki-docker/nginx/certs/. it should have .crt and .key files.</p></li>
+</ul>
+<p><strong>Follow the below example</strong></p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo openssl req -x509 -nodes -days <span class="m">365</span> -newkey rsa:2048 -keyout /ki-docker/nginx/certs/kitcheninnovations_com_au.key -out /ki-docker/nginx/certs/kitcheninnovations_com_au.crt
+</pre></div>
+</div>
+<p><strong>Step 3</strong></p>
+<ul class="simple">
+<li><p>Create environment variable tag “.env” with below data</p></li>
+</ul>
+<div class="admonition-remember admonition">
+<p class="admonition-title">Remember!</p>
+<p>While copy pasting the below entire code in .env file make sure there is no indent at the begining, otherwise indendation error will be thrown while migrating</p>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">SECRET_KEY</span><span class="o">=</span>OxOqffUpTiMcKKCbhDHzXTQcYvfQxIjdUulIQjAF
+<span class="nv">DEBUG</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">DJANGO_ALLOWED_HOSTS</span><span class="o">=</span>&lt;HOST-NAMES-SEPARATED-BY-SPACE&gt;
+
+<span class="nv">SQL_ENGINE</span><span class="o">=</span>django.db.backends.postgresql
+<span class="nv">SQL_DATABASE</span><span class="o">=</span>rapid-stage
+<span class="nv">SQL_USER</span><span class="o">=</span>rapid-stage
+<span class="nv">SQL_PASSWORD</span><span class="o">=</span>rapid@23456
+<span class="nv">SQL_HOST</span><span class="o">=</span>db-test
+<span class="nv">SQL_PORT</span><span class="o">=</span><span class="m">5432</span>
+
+<span class="nv">DJANGO_SETTINGS_MODULE</span><span class="o">=</span>rapid.settings
+<span class="nv">DJANGO_EMAIL_BACKEND</span><span class="o">=</span>django.core.mail.backends.smtp.EmailBackend
+<span class="nv">DJANGO_EMAIL_HOST</span><span class="o">=</span>smtp.gmail.com
+<span class="nv">DJANGO_EMAIL_PORT</span><span class="o">=</span><span class="m">587</span>
+<span class="nv">DJANGO_EMAIL_HOST_USER</span><span class="o">=</span>kitcheninnovations.rapid@gmail.com
+<span class="nv">DJANGO_EMAIL_HOST_PASSWORD</span><span class="o">=</span>fvoenkmakmjzzlag
+<span class="nv">DJANGO_DEFAULT_FROM_EMAIL</span><span class="o">=</span>rapid-email@kitcheninnovations.com.au
+<span class="nv">DJANGO_EMAIL_USE_TLS</span><span class="o">=</span>True
+
+<span class="nv">DJANGO_ACCOUNT_ALLOW_REGISTRATION</span><span class="o">=</span>False
+
+<span class="nv">CONSUMER_KEY</span><span class="o">=</span>a8fdd0ab8e5865c804fd3ca6bf1318c39db679ecc6902855c5850d163b62ba92
+<span class="nv">CONSUMER_SECRET</span><span class="o">=</span>7959943d2b26f64ecccd4722f21b5c2276df6ff80fea9a093d5839f2c94775d9
+<span class="nv">TOKEN_KEY</span><span class="o">=</span>bd612b0147cc8c8bee13af86d0f37e8e7df953c6b537068d266b91d8de59a5f0
+<span class="nv">TOKEN_SECRET</span><span class="o">=</span>e556cdce1bc7d78eff3d94e531a87f006946fb4d9dcd8add530421855e58e90d
+
+<span class="c1"># Not in use</span>
+
+<span class="nv">NSDB_NAME</span><span class="o">=</span>netsuite
+<span class="nv">NSDB_USER</span><span class="o">=</span>ki
+<span class="nv">NSDB_PASSWORD</span><span class="o">=</span>Link3061
+<span class="nv">NSDB_HOST</span><span class="o">=</span><span class="m">172</span>.16.1.46
+<span class="nv">NSDB_PORT</span><span class="o">=</span><span class="m">5432</span>
+
+<span class="nv">PORT</span><span class="o">=</span><span class="m">5443</span>
+</pre></div>
+</div>
+<p><strong>Step 4</strong></p>
+<ul class="simple">
+<li><p>Create environment variable file “.env.test.db” in “docker/env/” with below data</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">POSTGRES_DB</span><span class="o">=</span>rapid-stage
+<span class="nv">POSTGRES_USER</span><span class="o">=</span>rapid-stage
+<span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>rapid@23456
+</pre></div>
+</div>
+<p><strong>Step 5</strong></p>
+<ul class="simple">
+<li><p>Init and setup environment - run bash script inside builds/</p></li>
+</ul>
+<p><em># test is an argument and it will create docker image and containers for test environments</em></p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bash builds/init.sh <span class="nb">test</span>
+</pre></div>
+</div>
+<p><em># Django DB &amp; files migrations and superuser creations</em></p>
+<p><em># test and web-test are arguments</em></p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bash builds/migrate.sh <span class="nb">test</span> web-test
+</pre></div>
+</div>
+<p><strong>Step 6</strong></p>
+<ul>
+<li><p>Server will run on port 9001</p>
+<blockquote>
+<div><p><a class="reference external" href="https://mydomain.com:9001">https://mydomain.com:9001</a></p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="test-environment-deployment">
+<h1>Test Environment Deployment<a class="headerlink" href="#test-environment-deployment" title="Permalink to this heading"></a></h1>
+<p>Before apply your code changes including DB migrations, must follow the below steps. Run bash script inside builds/ folder.</p>
+<ul class="simple">
+<li><p>Get backup from the docker though we have configured persist db with docker volumes</p></li>
+</ul>
+<p># Django DB backup
+# test and web-test are arguments</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bash builds/backup.sh <span class="nb">test</span> web-test
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Rebuild by Init and setup environment</p></li>
+</ul>
+<p># test is an argument and it will create docker image and containers for test environments</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bash builds/init.sh <span class="nb">test</span>
+</pre></div>
+</div>
+<p># Django DB &amp; files migrations and superuser creations
+# test and web-test are arguments</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bash builds/migrate.sh <span class="nb">test</span> web-test
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="production-development-and-deployment">
+<h1>Production Development and Deployment<a class="headerlink" href="#production-development-and-deployment" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Follow the same pattern of test environment setup and replace the following</dt><dd><ul>
+<li><p>test to prod</p></li>
+<li><p>web-test to web</p></li>
+<li><p>Create .env.prod and .env.prod.db in docker/env</p></li>
+<li><p>remove test/stage word in env files</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>E.g, Init and setup environment - run bash script inside builds/</p></li>
+</ul>
+<p># test is an argument and it will create docker image and containers for test environments</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bash builds/init.sh <span class="nb">test</span>
+</pre></div>
+</div>
+<p># Django DB &amp; files migrations and superuser creations
+# test and web-test are arguments</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>bash builds/migrate.sh prod web
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Server will run on port 9000</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, DEVELOPERS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
