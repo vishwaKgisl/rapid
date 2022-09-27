@@ -3,12 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to RAPID WEB APP's Setup!
+Welcome to RAPID WEB APP Setup Guide!
 =========================================
-Welcome to the complete beginner's guide to RAPID WEB APP setup.
 
-Prequisites
-===========
+
+Overview
+========
+Welcome to RAPID WEB APP setup guide. In this guide we have explained the following in detail:
+
+- the softwares required for setup
+- setup process in Local without Docker
+- test environment setup with Docker
+- test environment deployment
+- production development and deployment
+- step by step process explained
+- many syntax provided for easy setup
+- database setup explained
+- environment variable creation explained
+- how to export variables
+- migrations
+- running the server  
+
+Requirements
+=============
 Before installation you must have the following softwares installed in your machine
 
 - For Local Development - Without Docker
